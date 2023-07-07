@@ -1,0 +1,33 @@
+importe1= self.txt_importe_1.get()
+
+        importe2= self.txt_importe_2.get()
+
+        importe3= self.txt_importe_3.get()
+
+        total_de_importes= float(importe1) + float(importe2) + float(importe3)
+
+        alert("Tp1", total_de_importes)
+
+    def btn_promedio_on_click(self):
+        importe1= self.txt_importe_1.get()
+
+        importe2= self.txt_importe_2.get()
+
+        importe3= self.txt_importe_3.get()
+
+        promedio_de_importes= float(importe1) / 3 + float(importe2) / 3 + float(importe3) / 3
+
+        alert("Tp1", promedio_de_importes)
+
+    def btn_total_iva_on_click(self):
+        importe1= self.txt_importe_1.get()
+
+        importe2= self.txt_importe_2.get()
+
+        importe3= self.txt_importe_3.get()
+
+        IVA = (total_de_importes * 21)/100
+
+        total_de_importes= float(importe1) + float(importe2) + float(importe3) + float(IVA)
+        
+        alert("Resultado", total_de_importes)
