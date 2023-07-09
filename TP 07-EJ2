@@ -1,0 +1,23 @@
+ def btn_convertir_c_f_on_click(self):
+        temperaturaF= self.txt_temperatura_c.get()
+        float(temperaturaF)
+
+        temperaturaC= self.txt_temperatura_f.get()
+        float(temperaturaC)
+        
+        texto= "La temperatura en Centigrados es " + temperaturaF + " La temperatura en Fahrenheit es " + temperaturaC 
+
+        alert("datos", texto)
+
+
+
+    def btn_convertir_f_c_on_click(self):
+        temperaturaF= self.txt_temperatura_c.get()
+        float(temperaturaF)
+
+        temperaturaC= self.txt_temperatura_f.get()
+        float(temperaturaC)
+        
+        texto= "La temperatura en Fahrenheit es " + temperaturaF + " La temperatura en Centigrados es " + temperaturaC 
+
+        alert("datos", texto)
