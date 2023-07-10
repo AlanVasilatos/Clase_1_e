@@ -1,0 +1,48 @@
+  """Punto A"""
+        ancho_terreno= self.txt_ancho.get()
+        largo_terreno= self.txt_largo.get()
+
+        ancho_terreno= int(ancho_terreno)
+        largo_terreno= int(largo_terreno)
+
+        metros_cuadrados = ancho_terreno * largo_terreno
+        metros_lineales= (ancho_terreno + largo_terreno) * 2
+
+        txt_punto_a= f"Metros cuadrados: {metros_cuadrados} Metros lineales: {metros_lineales}"
+
+        alert("Punto A", txt_punto_a)
+        
+        """Punto B"""
+        cantidad_postes_gruesos= 4 + (metros_lineales // 250)
+
+        txt_punto_b= f"cantidad_postes_gruesos : {cantidad_postes_gruesos}"
+
+        alert("Punto B", txt_punto_b)
+
+        """Punto C"""
+        cantidad_postes_finos= 0
+
+        cantidad_postes_finos= metros_lineales // 12
+
+        txt_punto_c = f"Cantidad de postes finos {cantidad_postes_finos}"
+
+        alert("Punto C", txt_punto_c)
+
+        """Punto D"""
+        cantidad_de_varillas= 0
+
+        cantidad_de_varillas= metros_lineales // 2 - (cantidad_postes_finos - cantidad_postes_gruesos)
+
+        txt_punto_d = f"Cantidad de varillas {cantidad_de_varillas}"
+
+        alert("Punto D", txt_punto_d)
+
+        """Punto E"""
+
+        cantidad_de_alambres= 0
+
+        cantidad_de_alambres= metros_lineales * 7
+
+        txt_punto_e = f"Cantidad de alambres{cantidad_de_alambres}"
+
+        alert("Punto E", txt_punto_e)
